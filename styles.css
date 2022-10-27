@@ -1,0 +1,51 @@
+@import url("./assets/style/cabecalho.css");
+@import url("./assets/style/principal.css");
+@import url("./assets/style/banner.css");
+@import url("./assets/style/categorias.css");
+@import url("./assets/style/eventos.css");
+@import url("./assets/style/rodape.css");
+@import url("./assets/style/flex.css");
+@import url("./assets/style/grid.css");
+@import url("./assets/style/agenda.css");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*cores*/
+    --amarelo: #FFC756;
+    --laranja: #F66139;
+    --lilas: #7F8FFE;
+    --verde: #56B78C;
+    --cinza-claro: #D9D9D9;
+    --cinza-escuro: #959595;
+
+    /*fontes*/
+    --fonte-primaria: 'Work Sans', sans-serif;
+    --fonte-secundaria: 'Fjalla One', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    height: 100vh;
+}
+
+/*Estilos compartilhados*/
+.categorias__titulo,
+.destaques,
+.eventos__titulo,
+.agenda__titulo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--fonte-secundaria);
+}
+
+img {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+img:hover {
+    opacity: 0.7;
+}
